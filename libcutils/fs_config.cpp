@@ -68,6 +68,11 @@ static inline uint64_t get8LE(const uint8_t* src) {
 
 static const struct fs_path_config android_dirs[] = {
         // clang-format off
+    { 00775, AID_ROOT,      AID_ROOT,      0, "system/b2g/b2g" },
+    { 00775, AID_ROOT,      AID_ROOT,      0, "system/b2g/updater" },
+    { 00775, AID_ROOT,      AID_ROOT,      0, "system/b2g/plugin-container" },
+    { 00775, AID_ROOT,      AID_ROOT,      0, "system/kaios/api-daemon" },
+    { 00775, AID_ROOT,      AID_ROOT,      0, "system/kaios/metrics_daemon" },
     { 00770, AID_SYSTEM,       AID_CACHE,        0, "cache" },
     { 00555, AID_ROOT,         AID_ROOT,         0, "config" },
     { 00771, AID_SYSTEM,       AID_SYSTEM,       0, "data/app" },

@@ -1,3 +1,4 @@
+  
 /*
  * Copyright (C) 2015 The Android Open Source Project
  *
@@ -40,6 +41,7 @@
 #include <hidl-util/FQName.h>
 #include <processgroup/processgroup.h>
 #include <selinux/selinux.h>
+#include <selinux/avc.h>
 #include <system/thread_defs.h>
 
 #include "rlimit_parser.h"
